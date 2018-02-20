@@ -6,13 +6,17 @@ public void setup()
 
 public void draw()
 {
-  /*fill(200,130,179);
-  circlez(0,230,30,30);
+ /* fill(200,130,179);
+  circlez(0,500,30,30);
   fill(90,192,98);
-  circlez(0,250,30,30);*/
-  
-
- 
+  circlez(0,50,30,30);
+  fill(90,192,98);
+  circlez(0,30,30,30);*/
+ for(int i = 500; i> -70; i-=20)
+ {
+   fill((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
+   circlez(0,i,30,30);
+ }
 }
 public void circlez(int x, int y, int myWidth, int myHeight)
 {
@@ -20,8 +24,8 @@ public void circlez(int x, int y, int myWidth, int myHeight)
  // myHeight = 10;
   if (x ==700)
   {
-    fill(0);
-    ellipse(350,250,10,10);
+    fill((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
+    ellipse(350,250,70,70);
   }
   else
   {
